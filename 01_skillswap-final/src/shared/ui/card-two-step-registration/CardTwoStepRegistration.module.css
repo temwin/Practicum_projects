@@ -1,0 +1,90 @@
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.avatarWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.avatarImage {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fieldsRow {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.fieldsRow .inputGroup {
+  flex: 1;
+}
+
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 16px;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.errorMessage {
+  color: #ff4d4f;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.primaryButton {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.primaryButton:not([disabled]):hover {
+  background-color: var(--color-button-hover);
+  border-color: var(--color-button-hover);
+}
+
+.formButton {
+  width: 100%;
+  height: auto;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.formButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

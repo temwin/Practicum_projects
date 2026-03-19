@@ -1,0 +1,128 @@
+.filters {
+  min-width: 324px;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background-color: var(--color-card);
+  position: sticky;
+  top: 110px;
+  max-height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+}
+
+.filtersHeaderRow {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filtersHeader {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.011em;
+  color: var(--color-text);
+}
+
+.filtersCounter {
+  opacity: 0;
+  transform: scale(0.8);
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.filtersCounterVisible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.filtersResetBtn {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  color: var(--color-text-link);
+  white-space: nowrap;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.filtersResetBtnVisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.filtersResetBtn:hover {
+  opacity: 0.8;
+}
+
+.filtersResetIcon {
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+.filtersResetIcon path {
+  fill: var(--color-text-link);
+}
+
+.filtersSubheader {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.011em;
+
+  margin-bottom: 15px;
+  color: var(--color-text);
+}
+
+.filtersContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-block-start: 40px;
+  overflow-y: auto;
+  flex: 1;
+
+  &::-webkit-scrollbar {
+    width: 0.15rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-disabled);
+    border-radius: 0.5rem;
+    min-height: 2.5rem;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
+.filtersSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

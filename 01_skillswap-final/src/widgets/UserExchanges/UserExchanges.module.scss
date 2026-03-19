@@ -1,0 +1,115 @@
+.container {
+  width: 100%;
+  padding: 2rem;
+  background: var(--color-card);
+  border-radius: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  .title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0;
+  }
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--color-disabled);
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--color-caption);
+
+  h3 {
+    margin: 1rem 0 0.5rem;
+    color: var(--color-text);
+  }
+}
+
+.exchangesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.exchangeCard {
+  background: var(--color-background);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.exchangeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .partnerName {
+    font-weight: 600;
+    margin: 0 0 0.25rem;
+  }
+
+  .skillName {
+    font-size: 0.875rem;
+    color: var(--color-caption);
+  }
+}
+
+.exchangeMeta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.exchangeContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.dates {
+  font-size: 0.875rem;
+  color: var(--color-caption);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}

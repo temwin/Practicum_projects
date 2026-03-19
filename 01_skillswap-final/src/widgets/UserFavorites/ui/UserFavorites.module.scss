@@ -1,0 +1,14 @@
+.favorites {
+  flex: 1;
+  display: flex;
+  overflow: hidden; 
+}
+
+.favoritesListContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+  padding-bottom: 3.75rem;
+}

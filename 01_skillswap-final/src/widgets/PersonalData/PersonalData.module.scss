@@ -1,0 +1,84 @@
+.personalDataContainer {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 460px auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'info personalFoto'
+    'saveButton empty';
+  justify-content: space-between;
+  row-gap: 32px;
+  width: 1020px;
+  padding: 60px;
+}
+
+.info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.passChange {
+  color: var(--color-text-link);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.date_wg {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+}
+
+.info .dropdown {
+  width: 100%;
+  max-width: 100%;
+}
+
+.personalFoto {
+  position: relative;
+  grid-area: personalFoto;
+}
+
+.foto {
+  width: 244px;
+  height: 244px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.fotoView {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: var(--color-background, green);
+}
+
+.icon {
+  position: absolute;
+  top: 187px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: var(--color-button-hover);
+  border-radius: 50%;
+  padding: 0;
+  color: var(--color-text);
+  z-index: 2;
+}
+
+.saveButton {
+  grid-area: saveButton;
+}

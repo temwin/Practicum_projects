@@ -1,0 +1,78 @@
+.notification {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 2.125rem 0 1.5rem;
+  background-color: var(--color-button-hover);
+  border-radius: 0.75rem;
+  height: 4.5rem;
+}
+
+.notificationInline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: var(--color-card);
+}
+
+.messageWrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-text);
+}
+
+.iconInline {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  color: var(--color-text);
+}
+
+.text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.closeButton {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.gotoButton {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  top: auto;
+  height: 2rem;
+  background: var(--color-card);
+  border: none;
+  color: var(--color-text);
+  border-radius: 1.25rem;
+  padding: 0 0.75rem;
+  font-size: 0.75rem;
+  font-family: var(--font-roboto), serif;
+  font-variation-settings:
+    'wght' 400,
+    'wdth' 100;
+  cursor: pointer;
+  transition: background 0.2s;
+  z-index: 2;
+}

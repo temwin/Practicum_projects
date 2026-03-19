@@ -1,0 +1,11 @@
+<Upload
+  mode="image"
+  accept="image/*"
+  onChange={(file) => {}}
+/>
+
+<Upload
+  mode="file"
+  accept=".pdf,.docx"
+  onChange={(file) => {}}
+/>

@@ -1,0 +1,60 @@
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-text, 16px);
+  color: var(--text-color);
+  width: 100%;
+  max-width: 400px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color);
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.errorMessage {
+  color: #ff4d4f;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.primaryAction {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.primaryAction:not([disabled]):hover {
+  background-color: var(--color-button-hover);
+  border-color: var(--color-button-hover);
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 16px;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.uploadContainer {
+  max-height: 112px;
+  overflow: hidden;
+  width: 100%;
+}

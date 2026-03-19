@@ -1,0 +1,33 @@
+.wrapper {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 6px solid rgba(171, 210, 122, 0.3);
+  border-top-color: var(--color-accent);
+  animation: spin 1s linear infinite;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-family: var(--font-jost), serif;
+  font-variation-settings: 'wght' 500;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

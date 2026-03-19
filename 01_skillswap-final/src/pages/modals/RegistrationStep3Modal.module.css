@@ -1,0 +1,132 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(142, 142, 142, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.container {
+  background: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 1024px;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease;
+  padding-bottom: 72px;
+}
+
+.header {
+  padding: 32px 32px 24px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #666;
+}
+
+.content {
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topTexts {
+  margin-top: 44px;
+  margin-bottom: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.mainText {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.subText {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.divider {
+  height: 1px;
+  background: #f0f0f0;
+  margin: 24px 0;
+  width: 100%;
+}
+
+/* Контейнер для SkillConfirmation (ранее SkillDescription) */
+.skillDescriptionWrapper,
+.skillConfirmationWrapper {
+  width: 904px;
+  margin: 0 auto;
+}
+
+/* Кнопки больше не нужны — удалены из JSX */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95%;
+    padding-bottom: 48px;
+  }
+
+  .content {
+    padding: 0 24px;
+    align-items: stretch;
+  }
+
+  /* Адаптация контейнера для SkillConfirmation */
+  .skillDescriptionWrapper,
+  .skillConfirmationWrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0 16px; /* Дополнительный внутренний отступ на мобильных */
+  }
+
+  .topTexts,
+  .divider {
+    width: calc(100% - 48px);
+  }
+}

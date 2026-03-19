@@ -1,0 +1,78 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  position: relative;
+  max-width: 1440px;
+  height: 1372px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 36px 0px 36px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.skillSection {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 45px;
+}
+
+.skillDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.userCardContainer {
+  flex: 0 0 auto;
+}
+
+.similarSection {
+  width: 100%;
+}
+
+.loading,
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+  color: var(--color-caption);
+}
+
+.error {
+  color: #dc3545;
+}
+
+// Адаптивность для мобильных устройств
+@media (max-width: 1200px) {
+  .skillSection {
+    flex-direction: column;
+
+    .userCardContainer,
+    .skillDescriptionContainer {
+      width: 100%;
+    }
+  }
+
+  .mainContent {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 0 16px;
+    margin-top: 100px;
+  }
+}

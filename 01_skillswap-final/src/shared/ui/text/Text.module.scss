@@ -1,0 +1,45 @@
+.h1 {
+  font-family: var(--font-jost), serif;
+  font-variation-settings: 'wght' 500;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.h2 {
+  font-family: var(--font-jost), serif;
+  font-variation-settings: 'wght' 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.h3 {
+  font-family: var(--font-jost), serif;
+  font-variation-settings: 'wght' 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.h4 {
+  font-family: var(--font-roboto), serif;
+  font-variation-settings: 'wght' 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.body {
+  font-family: var(--font-roboto), serif;
+  font-size: 1rem;
+  font-variation-settings:
+    'wght' 400,
+    'wdth' 100;
+  line-height: 1.5rem;
+}
+
+.caption {
+  font-family: var(--font-roboto), serif;
+  font-size: 0.75rem;
+  font-variation-settings:
+    'wght' 400,
+    'wdth' 100;
+  line-height: 1rem;
+}

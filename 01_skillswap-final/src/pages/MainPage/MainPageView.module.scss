@@ -1,0 +1,43 @@
+.page {
+  width: 1440px;
+  margin: 0 auto;
+  height: 100vh;              //  фиксируем высоту
+  display: flex;              //  добавляем флекс в колонку, 
+  flex-direction: column;
+}
+.mainContainer {
+  flex: 1;                    //  растягивается
+  display: flex;
+  gap: 8px;
+  padding: 32px 0px 0px 32px;
+  background-color: var(--color-background);
+  overflow: hidden;
+}
+
+.usersListContainer {
+  flex: 1;                    //  занимает доступную высоту
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow-y: auto;           //  добавляем скролл
+  padding-left: 16px;
+  padding-bottom: 3.75rem;
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-disabled);
+    border-radius: 0.5rem;
+    min-height: 2.5rem;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+}

@@ -1,0 +1,53 @@
+.registerPage {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-background); /* Новый цвет фона */
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: flex-start; /* Прижатие к верху */
+  padding: 20px 0;
+}
+
+.content {
+  background-color: #fff;
+  /* Убраны: border-radius и box-shadow */
+  width: calc(100% - 40px); /* Занимает почти всю ширину с отступами */
+  overflow: hidden;
+}
+
+.content > .registrationWizard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Адаптация для экранов до 1199px */
+@media (max-width: 1199px) {
+  .content {
+    width: calc(100% - 32px);
+    margin: 0 16px;
+  }
+}
+
+/* Адаптация для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    margin: 0;
+    /* Уже нет border-radius и box-shadow — они убраны глобально */
+  }
+
+  .content > .registrationWizard {
+    padding: 0 16px;
+  }
+}
+
+.errorMessage {
+  margin-top: 16px;
+  color: #d32f2f;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+  background-color: #ffebee;
+  border-radius: 4px;
+}

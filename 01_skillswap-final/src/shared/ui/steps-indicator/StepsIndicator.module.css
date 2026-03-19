@@ -1,0 +1,43 @@
+:root {
+  --color-text-primary: var(--color-text);
+  --progress-fill-active: var(--color-accent);
+  --progress-fill-inactive: var(--color-disabled);
+  --step-height: 4px;
+  --step-radius: 8px;
+  --step-gap: 16px;
+  --label-font-size: 24px;
+  --label-weight: 500;
+}
+
+.rootWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 212px;
+  height: 44px;
+}
+
+.stepLabel {
+  color: var(--color-text-primary);
+  font-weight: var(--label-weight);
+  font-size: var(--label-font-size);
+}
+
+.progressContainer {
+  display: flex;
+  gap: var(--step-gap);
+  width: 100%;
+}
+
+.stepIndicator {
+  flex: 1;
+  height: var(--step-height);
+  background-color: var(--progress-fill-inactive);
+  border-radius: var(--step-radius);
+  transition: background-color 0.3s ease;
+}
+
+.isActive {
+  background-color: var(--progress-fill-active);
+}

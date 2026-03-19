@@ -1,0 +1,35 @@
+.radioButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.25rem 0;
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.label {
+  font-family: var(--font-roboto), serif;
+  font-size: 1rem;
+  font-variation-settings:
+    'wght' 400,
+    'wdth' 100;
+  color: var(--color-text);
+}

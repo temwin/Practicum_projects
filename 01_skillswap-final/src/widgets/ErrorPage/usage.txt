@@ -1,0 +1,4 @@
+import { ErrorPage } from '../widgets/ErrorPage';
+
+const PageNotFound = () => <ErrorPage errorType={404} />;
+export default PageNotFound;

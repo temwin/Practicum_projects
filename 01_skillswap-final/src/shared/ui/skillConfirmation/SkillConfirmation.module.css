@@ -1,0 +1,98 @@
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  width: 904px; /* 420 (левый блок) + 440 (правый блок) + 44 (отступ) */
+  background: var(--color-card);
+  border: 2px solid var(--color-card);
+  border-radius: 12px;
+  position: relative;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 44px;
+}
+
+.descriptionBlock {
+  width: 420px;
+  height: 324px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+	gap: 20px;
+}
+
+.textBlock {
+  height: 256px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;  
+}
+
+.skillName {
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+	margin-bottom: 4px;
+}
+
+.metaInfo {
+  width: 100%;  
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--color-caption);
+  padding-bottom: 20px;  
+}
+
+.category,
+.subcategory {
+  font-weight: 500;
+}
+
+.divider {
+  opacity: 0.6;
+}
+
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  margin: 0;
+  overflow-y: auto;
+  max-height: 188px; /* 256px (textBlock) - 40px (skillName) - 16px (metaInfo) - отступы */
+  width: 100%;
+}
+
+.buttonGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.editButton,
+.confirmButton {
+  width: 100%;
+}
+
+.imageSlider {
+  width: 440px;
+  height: 324px;
+}

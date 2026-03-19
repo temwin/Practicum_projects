@@ -1,0 +1,125 @@
+/* src/shared/ui/ImageSlider/ImageSlider.module.css */
+
+.sliderContainer {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  max-width: 440px;
+  height: 324px;
+  overflow: hidden;
+}
+
+.mainSlider {
+  position: relative;
+  width: 324px;
+  height: 324px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #f8f9fa;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.2s;
+}
+
+.navBtn:hover {
+  background: white;
+}
+
+.prev {
+  left: 8px;
+}
+
+.next {
+  right: 8px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.thumbItem {
+  width: 92px;
+  height: 92px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+  position: relative;
+}
+
+.thumbItem.active {
+  border-color: #007bff;
+}
+
+.thumbItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Стиль для 4-й миниатюры с +N */
+.thumbItem.more {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.thumbItem.more::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 240, 240, 0.5); /* полупрозрачный слой */
+  z-index: 1;
+}
+
+.thumbItem.more img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7; /* дополнительно затемняем изображение */
+  z-index: 0;
+  position: relative;
+}
+
+.thumbItem .moreText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+  z-index: 2;
+}
