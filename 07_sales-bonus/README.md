@@ -14,7 +14,9 @@
 -index.html — запускает скрипт в браузере
 
 ## 🚀 Запуск проекта
-1. Склонируйте репозиторий:
-git clone https://github.com/temwin/sales-bonus
+1. Склонируйте репозиторий:  
+   ```bash
+   git clone https://github.com/temwin/Practicum_projects.git
+   ```
 2. Откройте файл index.html в браузере
 В консоли DevTools (CTRL+Shift+I) будет выведен рейтинг продавцов и рассчитанные бонусы
