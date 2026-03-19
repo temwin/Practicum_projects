@@ -17,6 +17,9 @@
 git clone https://github.com/temwin/Practicum_projects.git
 ```
 2.Перейдите в директорию проекта:
+```bash
+cd Practicum_projects/05_weblarek
+```
 3. Установите зависимости:
 ```bash
 npm install
