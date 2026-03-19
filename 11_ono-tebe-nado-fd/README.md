@@ -14,20 +14,20 @@
 
 ## 🛠 Стек технологий
 
-HTML5, CSS3
+- HTML5, CSS3
 
-Flexbox и CSS Grid
+- Flexbox и CSS Grid
 
-Pixel Perfect для точного соответствия макету
+- Pixel Perfect для точного соответствия макету
 
-Подключение шрифтов и оверлеи для карточек
+- Подключение шрифтов и оверлеи для карточек
 
 ## 🚀 Запуск проекта
 
-Скачать Node.js — https://nodejs.org/
+1. Скачать Node.js — https://nodejs.org/
 
-Открыть проект в VS Code
+2. Открыть проект в VS Code
 
-Подключить стили в index.html
+3. Подключить стили в index.html
 
-Открыть index.html в браузере
+4. Открыть index.html в браузере
