@@ -37,4 +37,4 @@
    ```bash
    git clone https://github.com/temwin/Practicum_projects.git
    ```
-2. Откройте файл index.html в браузере
+2. Откройте файл index.html в браузере.
