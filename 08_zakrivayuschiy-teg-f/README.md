@@ -26,6 +26,5 @@ SVG — анимация сердечек и декоративных детал
 ARIA — доступность кнопок и диалогов
 
 ## 🚀 Запуск
-git clone https://github.com/temwin/Practicum_projects.git
-
-Открой index.html в браузере.
+1. git clone https://github.com/temwin/Practicum_projects.git
+2. Открой index.html в браузере.
