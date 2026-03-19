@@ -35,6 +35,6 @@
 
 1. Склонируйте репозиторий:  
    ```bash
-   git clone https://github.com/temwin/Practicum_projects/tree/main/09_slozhno-sosredotochitsya-fd
+   git clone [https://github.com/temwin/Practicum_projects/tree/main/09_slozhno-sosredotochitsya-fd]
    ```
 2. Откройте файл index.html в браузере
