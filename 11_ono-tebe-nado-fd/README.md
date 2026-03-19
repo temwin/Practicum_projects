@@ -22,18 +22,6 @@ Pixel Perfect для точного соответствия макету
 
 Подключение шрифтов и оверлеи для карточек
 
-## 🎨 Классы и структура
-
-header — шапка, header__menu — меню, header__logo — логотип, header__address — контакты
-
-cover — обложка, overlay — полупрозрачный слой, cover__title — заголовок, cover__description — подзаголовок и кнопка
-
-lots — секция с лотами, lots__card-list — список карточек, card — отдельная карточка, overlay — оверлей внутри карточки
-
-about — секция «Об аукционе», about__column — колонки, about__logo — логотип, about__text — текст
-
-footer — подвал, footer__menu — ссылки, footer__social-list — соцсети
-
 ## 🚀 Запуск проекта
 
 Скачать Node.js — https://nodejs.org/
