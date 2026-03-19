@@ -19,4 +19,4 @@
    git clone https://github.com/temwin/Practicum_projects.git
    ```
 2. Откройте файл index.html в браузере
-В консоли DevTools (CTRL+Shift+I) будет выведен рейтинг продавцов и рассчитанные бонусы
+3. В консоли DevTools (CTRL+Shift+I) будет выведен рейтинг продавцов и рассчитанные бонусы
