@@ -14,7 +14,7 @@
 ## 🚀 Запуск проекта
 1. Склонируйте репозиторий:
 ```bash
-git clone <репозиторий>
+git clone https://github.com/temwin/Practicum_projects.git
 ```
 2. Перейдите в директорию проекта:
 ```bash
