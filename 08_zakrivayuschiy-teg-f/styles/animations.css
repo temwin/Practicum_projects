@@ -1,0 +1,93 @@
+/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+*/
+
+.is-liked .heart {
+    animation: scale 0.3s ease-in 0.1s;
+    transform-origin: center;
+  }
+  
+  @keyframes scale {
+    from {
+      scale: 1;
+    }
+  
+    to {
+      scale: 1.25;
+    }
+  }
+  
+  .sparks {
+    opacity: 0;
+  }
+  
+  .is-liked .sparks {
+    animation: opacity 0.3s ease-in 0.3s;
+  }
+  
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .like-icon .core {
+    fill: transparent;
+    transition: fill 0.3s ease-in-out 0.03s;
+  }
+  
+  .like-icon:hover .core {
+    fill: black;
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .like-icon .main-body {
+    fill: transparent;
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .like-icon:hover .main-body {
+    fill: black;
+    transition: fill 0.3s ease-in-out 0.05s;
+  }
+  
+  .like-icon:active .core {
+    fill: red;
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .like-icon:active .main-body {
+    fill: red;
+    transition: fill 0.3s ease-in-out 0.05s;
+  }
+  
+  .like-icon.is-liked .main-body {
+    fill: red;
+    transition: fill 0.3s ease-in-out 0.05s;
+  }
+  
+  .like-icon.is-liked .core {
+    fill: red;
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .like-icon.is-liked .contour {
+    fill: red;
+    transition: fill 0.3s ease-in-out 0.06s;
+  }
+  
+  .like-icon:not(.is-liked) .contour {
+    transition: fill 0.1s linear;
+  }

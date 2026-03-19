@@ -1,0 +1,32 @@
+:root {
+  --main-font: 'Inter';
+  --accent-font: 'Press Start 2P';
+  --card-text-weight: 'wght' 400;
+  --card-title-weight: 'wght' 700;
+  --basic-font: 18px;
+  --label-font: 14px;
+  --button-text-size: 14px;
+  --background-blocks: white;
+  --border-color: black;
+  --button-shadow: black;
+  --button-fill: black;
+  --button-color: white;
+  --background-button-color: white;
+  --gradient-background: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#e7e7e7 0.01%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --contour-color: black;
+  --animation-fill-color: red;
+  --backdrop-color: rgba(0, 0, 0, 1);
+}

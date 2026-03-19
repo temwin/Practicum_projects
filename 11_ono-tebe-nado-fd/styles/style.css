@@ -1,0 +1,251 @@
+.header {
+  padding: 92px 50px 96px 50px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+}
+
+.header__menu-list {
+  display: flex;
+  list-style-type: none;
+  gap: 32px;
+}
+
+.header__menu-item {
+  font-size: 18px;
+}
+
+.header__menu-item_marker {
+  position: relative;
+  list-style: circle;
+}
+
+.header__logo {
+  display: block;
+  width: 137px;
+}
+
+.header__logo-image {
+  display: block;
+}
+
+.address {
+  max-width: 240px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-underline-offset: 4px;
+}
+
+.address__header {
+  justify-self: end;
+}
+
+.cover {
+  position: relative;
+  background: url("../images/Cover.jpg") center / cover;
+  padding: 165px 50px 50px 50px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.cover__title {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-size: 100px;
+  letter-spacing: 30px;
+  position: relative;
+  z-index: 2;
+  margin-right: -30px;
+  text-transform: uppercase;
+  gap: 20px;
+  line-height: 115px;
+}
+
+.aligned__text {
+  text-align: start;
+}
+
+.aligned__text-center {
+  text-align: center;
+}
+
+.aligned__text-right {
+  text-align: end;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 106px;
+}
+
+.cover__description-text {
+  word-spacing: 19px;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.bet--button {
+  background: transparent;
+  color: #ffffff;
+  z-index: 2;
+  border: 1px solid #ffffff;
+  padding: 12px 32px 11px 31px;
+  text-transform: uppercase;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.lots {
+  margin: 180px 24px 120px;
+}
+
+.lots__heading {
+  padding-left: 40px;
+  padding-bottom: 27px;
+  font-size: 40px;
+}
+
+.lots__card-list {
+  list-style: none;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.lots__card-item {
+  width: 334px;
+  min-height: 596px;
+  position: relative;
+}
+
+.card__type__picture {
+  height: 100%;
+}
+
+.card {
+  height: 100%;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card__title {
+  z-index: 1;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration: underline;
+}
+
+.card__text {
+  z-index: 1;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.card_type_film {
+  background: url("../images/card-lot-01.jpg") no-repeat center / cover;
+}
+
+.card_type_book {
+  background: url("../images/card-lot-02.jpg") no-repeat center / cover;
+}
+
+.card_type_picture {
+  background: url("../images/card-lot-03.jpg") no-repeat center / cover;
+}
+
+.lots__look-more-link {
+  margin-top: 30px;
+  margin-left: 40px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.about {
+  margin: 0px 24px 180px;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+}
+
+.about__logo {
+  height: 240px;
+  width: 240px;
+  background-color: black;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 47px;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  margin-top: 136px;
+  font-size: 40px;
+}
+
+.about__text {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  padding: 1px 50px 82px 50px;
+}
+
+.footer__menu {
+  text-align: center;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+.footer__menu-list {
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  justify-content: flex-end;
+}

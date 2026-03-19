@@ -1,0 +1,50 @@
+{
+  "name": "posmotri-v-okno-fd",
+  "version": "1.0.0",
+  "description": "https://github.com/temwin/posmotri-v-okno-fd",
+  "main": "index.js",
+  "dependencies": {
+    "chownr": "^3.0.0",
+    "detect-libc": "^2.0.4",
+    "enhanced-resolve": "^5.18.1",
+    "esbuild": "^0.25.5",
+    "fdir": "^6.4.5",
+    "graceful-fs": "^4.2.11",
+    "jiti": "^2.4.2",
+    "lightningcss": "^1.30.1",
+    "lightningcss-darwin-arm64": "^1.30.1",
+    "magic-string": "^0.30.17",
+    "minipass": "^7.1.2",
+    "minizlib": "^3.0.2",
+    "mkdirp": "^3.0.1",
+    "nanoid": "^3.3.11",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.2",
+    "rollup": "^4.41.1",
+    "source-map-js": "^1.2.1",
+    "tapable": "^2.2.2",
+    "tar": "^7.4.3",
+    "tinyglobby": "^0.2.14",
+    "vite": "^6.3.5",
+    "yallist": "^5.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temwin/posmotri-v-okno-fd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temwin/posmotri-v-okno-fd/issues"
+  },
+  "homepage": "https://github.com/temwin/posmotri-v-okno-fd#readme"
+}
